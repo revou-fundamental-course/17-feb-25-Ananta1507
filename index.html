@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide"><img src="assets/coffee-shop.jpg" alt="Coffee 1"></div>
+            <div class="slide"><img src="assets/coffee-shop1.jpg" alt="Coffee 2"></div>
+            <div class="slide"><img src="assets/coffee-shop2.jpg" alt="Coffee 3"></div>
+        </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    
+    <div class="content" id="home">
+        <h2>Selamat Datang di Coffee Haven</h2>
+        <p>Nikmati kopi terbaik dengan suasana yang nyaman.</p>
+    </div>
+    
+    <div class="section menu" id="menu">
+        <h2>Menu Kami</h2>
+        <p>Espresso, Latte, Cappuccino, Mocha, dan berbagai pilihan lainnya.</p>
+    </div>
+    
+    <div class="section about" id="about">
+        <h2>Tentang Kami</h2>
+        <p>Coffee Haven adalah tempat terbaik untuk menikmati kopi berkualitas dengan suasana yang nyaman.</p>
+    </div>
+    
+    <div class="section contact" id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Email: contact@coffeehaven.com | Telepon: 0812-3456-7890</p>
+        <div class="contact-form">
+            <h3>Hubungi Kami</h3>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Nama" required>
+                <span class="error" id="nameError"></span>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <span class="error" id="emailError"></span>
+                <textarea id="message" name="message" placeholder="Pesan" rows="5" required></textarea>
+                <span class="error" id="messageError"></span>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+<footer class="footer">
+    <p>&copy; 2025 CoffeShop. All Rights Reserved.</p>
+    <p>Created By Difa Ananta Ariftyandaru</p>
+    <p>RevoU Mini-Project</p>
+</footer>
+</html>
+
+
